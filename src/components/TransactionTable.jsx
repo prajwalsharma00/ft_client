@@ -16,10 +16,6 @@ export const TransactionTable = () => {
     setDisplayTran(transactions);
   }, [transactions]);
 
-  // const balance = displyTran.reduce((acc, t) => {
-  //   return t.type === "income" ? acc + t.amount : acc - t.amount;
-  // }, 0);
-
   const handleOnSearch = (e) => {
     const { value } = e.target;
     const filteredArg = transactions.filter(({ title }) => {

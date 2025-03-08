@@ -20,6 +20,10 @@ export const TransactionForm = () => {
   const handleOnSubmit = async (e) => {
     e.preventDefault();
 
+    // TODO: 6. Create a New Transaction
+    // Call the transaction API to create a new transaction and fetch the updated transaction list.
+
+    /* -- uncomment line
     const pending = postNewTransaction(form);
     toast.promise(pending, {
       pending: "please wait ...",
@@ -34,6 +38,7 @@ export const TransactionForm = () => {
       //close the modal
       toggleModal(false);
     }
+      -- uncomment line */
   };
 
   const fields = [

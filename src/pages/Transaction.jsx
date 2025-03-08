@@ -10,7 +10,9 @@ import { CustomModal } from "../components/CustomModal";
 const Transaction = () => {
   const { getTransactions } = useUser();
   useEffect(() => {
-    getTransactions();
+    // TODO : 7. Fetch the transaction
+    // uncomment getTransactions;
+    // getTransactions();
   }, []);
   return (
     <Container className="p-5">
