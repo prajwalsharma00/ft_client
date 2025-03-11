@@ -12,6 +12,7 @@ import { Auth } from "./auth/Auth";
 import { useEffect } from "react";
 import { autoLogin } from "./utils/users";
 import { useUser } from "./context/UserContext";
+import { WorkInProgress } from "./components/WorkInProgress";
 
 function App() {
   const { user, setUser } = useUser();
@@ -25,11 +26,16 @@ function App() {
   };
 
   return (
-    <div className="wrapper">
+    // TODO: 3 apply wrapper class
+    <div className="">
       <Routes>
         <Route path="*" element={<DefaultLayout />}>
           <Route index element={<Login />} />
-          {/* <Route index element={<h1>Working...</h1>} /> */}
+
+          {/* TODO: 2. Replace WorkInProgress component with the actual SignUp component 
+          Update the route to render <SignUp /> instead of <WorkInProgress /> when users visit "/signup".
+          */}
+          <Route path="signup" element={<WorkInProgress />} />
           {/* <Route path="signup" element={<SignUp />} /> */}
 
           <Route

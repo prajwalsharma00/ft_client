@@ -14,10 +14,10 @@ import { useUser } from "../../context/UserContext";
 export const Header = () => {
   const { user, setUser } = useUser();
   const handleOnLogOut = () => {
-    //     1. On Logout click, delete `accessJWT` token form the `localStorage`
+    // On Logout click, delete `accessJWT` token form the `localStorage`
     localStorage.removeItem("accessJWT");
 
-    // 2. Reset user object form the state
+    // Reset user object form the state
     setUser({});
   };
 
