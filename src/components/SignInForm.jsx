@@ -7,10 +7,12 @@ import { loginUser, postNewUser } from "../../helpers/axiosHelper";
 import useForm from "../hooks/useForm";
 import { useUser } from "../context/UserContext";
 import { useLocation, useNavigate } from "react-router-dom";
+
 const initialState = {
   email: "",
   password: "",
 };
+
 export const SignInForm = () => {
   const location = useLocation();
   console.log(location);
@@ -42,9 +44,14 @@ export const SignInForm = () => {
 
   const handleOnSubmit = async (e) => {
     e.preventDefault();
+    // TODO: 4. Call the Login API
+    // Comment alert line
+    // Uncomment the following code to trigger the login API call, show a loading toast,
+    // and display a success or error message based on the response.
 
-    console.log(form);
+    alert("I AM CALLING LOGIN API");
 
+    /*-- remove this line
     const pendingResp = loginUser(form);
     toast.promise(pendingResp, {
       pending: "Please wait .....",
@@ -56,6 +63,8 @@ export const SignInForm = () => {
     console.log(user, accessJWT);
     setUser(user);
     accessJWT && localStorage.setItem("accessJWT", accessJWT);
+
+    -- remove this line*/
   };
 
   return (
