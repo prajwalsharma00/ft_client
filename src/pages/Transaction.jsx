@@ -12,7 +12,7 @@ const Transaction = () => {
   useEffect(() => {
     // TODO : 7. Fetch the transaction
     // uncomment getTransactions;
-    // getTransactions();
+    getTransactions();
   }, []);
   return (
     <Container className="p-5">

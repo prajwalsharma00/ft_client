@@ -1,10 +1,10 @@
 /* TODO: 3. add wrapper class  */
 
-/* .wrapper {
+.wrapper {
   min-height: 100vh;
   background: #000;
   color: rgb(221, 221, 221);
-} */
+}
 
 .main {
   min-height: calc(100vh - 150px);

@@ -27,7 +27,7 @@ function App() {
 
   return (
     // TODO: 3 apply wrapper class
-    <div className="">
+    <div className="wrapper">
       <Routes>
         <Route path="*" element={<DefaultLayout />}>
           <Route index element={<Login />} />
@@ -35,7 +35,7 @@ function App() {
           {/* TODO: 2. Replace WorkInProgress component with the actual SignUp component 
           Update the route to render <SignUp /> instead of <WorkInProgress /> when users visit "/signup".
           */}
-          <Route path="signup" element={<WorkInProgress />} />
+          <Route path="signup" element={<SignUp/>} />
           {/* <Route path="signup" element={<SignUp />} /> */}
 
           <Route

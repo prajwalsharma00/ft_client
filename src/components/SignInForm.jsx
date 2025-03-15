@@ -51,7 +51,7 @@ export const SignInForm = () => {
 
     alert("I AM CALLING LOGIN API");
 
-    /*-- remove this line
+
     const pendingResp = loginUser(form);
     toast.promise(pendingResp, {
       pending: "Please wait .....",
@@ -64,7 +64,7 @@ export const SignInForm = () => {
     setUser(user);
     accessJWT && localStorage.setItem("accessJWT", accessJWT);
 
-    -- remove this line*/
+ 
   };
 
   return (
